@@ -2,8 +2,6 @@
 
 # Table of Contents
 
-## Schema: refined  
-
 Dimension tables
 1. d_account
 2. d_account_meta
