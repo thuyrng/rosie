@@ -52,7 +52,7 @@ Wallet (d_wallet)
     ├── f_wallet_transaction_account            — bridge wx → ax
     ├── f_wallet_account_transaction            — ax level (raw point movements)
     │   ├── f_account_transaction_detail        — bill receipt, store, amount
-    │   └── f_ref_voucher                       — voucher_no ↔ account_transaction_id
+    │   └��─ f_ref_voucher                       — voucher_no ↔ account_transaction_id
     ├── f_wallet_transaction_adj_result         — adjustment result
     └── d_wallet_transaction_meta               — KV metadata for wx
 ```
