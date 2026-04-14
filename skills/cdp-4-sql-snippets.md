@@ -187,7 +187,7 @@ All branches push wallet_id = ':wallet_id' into each CTE for index efficiency.
 
 Key output columns: wallet_transaction_id, account_transaction_id, event_name, wx_type, ax_event, ax_value, balance_before_current, balance_change, balance_after_current, orig_bill_receipt, orig_bill_amount, store_id, campaign_id, event_stored_at.
 
-Branch 1 excludes: POSCONNECT.WALLET.SPEND.VOID rows where ax.event='SPEND' �� POSCONNECT.WALLET.REFUND rows where w.type='SETTLE' · rows where LENGTH(w.account::text) < 3.
+Branch 1 excludes: POSCONNECT.WALLET.SPEND.VOID rows where ax.event='SPEND' · POSCONNECT.WALLET.REFUND rows where w.type='SETTLE' · rows where LENGTH(w.account::text) < 3.
 
 ```sql
 WITH f_event AS (
